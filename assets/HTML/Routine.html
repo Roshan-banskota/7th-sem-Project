@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Time Table</title>
+    <link rel="stylesheet" href="../CSS/timetablejs.css">
+    <link rel="stylesheet" href="../CSS/demo.css">
+
+  </head>
+
+  <body>
+
+  	<div class="timetable"></div>
+
+    <script src="../JS/timetable.js"></script>
+
+    <script type="text/javascript">
+    	var timetable = new Timetable();
+
+		    timetable.setScope(6,18)
+
+      	timetable.addLocations(['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']);
+
+        var day = 'Sunday';
+      	timetable.addEvent('kd', day, new Date(2019,9,7,7,30), new Date(2019,9,7,8,15));
+        timetable.addEvent('ma', day, new Date(2019,9,7,8,15), new Date(2019,9,7,9,00));
+        timetable.addEvent('ma', day, new Date(2019,9,7,9,00), new Date(2019,9,7,9,45));
+        timetable.addEvent('ma', day, new Date(2019,9,7,9,45), new Date(2019,9,7,10,30));
+        timetable.addEvent('ma', day, new Date(2019,9,7,10,30), new Date(2019,9,7,11,15));
+        timetable.addEvent('ma', day, new Date(2019,9,7,11,15), new Date(2019,9,7,12,00));
+        
+      
+      
+      	var renderer = new Timetable.Renderer(timetable);
+      	renderer.draw('.timetable');
+    </script>
+      
+
+  </body>
+</html>

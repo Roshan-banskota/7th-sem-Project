@@ -1,0 +1,81 @@
+html,body {background-color: #efefef;height: 100%;}
+.btn-login {background-color: transparent; color: #FFF; border: 1px solid #CCC;}
+
+.btn-success {background-color: #288628;border-color: #0e4e0e;}
+
+.clock {position: absolute;
+        top: 10%;
+    left: 14%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #FFF;
+    font-size: 30px;
+    letter-spacing: 7px;
+   background-color: #212121d1;
+    padding: 8px 20px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {color: #FFF;background-color: #1a2c52;}
+
+#back {
+    background-image: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#back .container-fluid {
+    height: 100vh;position: relative;
+}
+
+
+#back h1 {color: #FFF;text-align: center;margin-bottom: 50px;
+    font-size: 62px;font-family: 'Quicksand', sans-serif;
+}
+
+#form.login {
+    width: 30%;right: 6%;
+    background-color:#212121d1;
+    border: transparent;
+    position: absolute;
+    top: 24%;
+    padding: 24px;
+}
+
+#form.login .form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#form.login .btn, #content.register #form .btn {
+    width: 100%;    margin-top: 16px;
+}
+
+#form.login .btn:hover, #content.register #form .btn:hover {background-color: #FFF;color: #393939;}
+
+#form.login span {
+    color: #FFF;
+}
+
+#content.register {height: 100vh;background-image: url(../img/register.jpg);background-size: cover;}
+#content.register #form {position: absolute;right: 0;left: 0;top: 25%;}
+#content.register #form form {    background-color: #1d1d1dc4;width: 40%;margin: 0 auto;padding:20px;}
+#content.register #form form .form-group {margin-left: 0;margin-right: 0;}
+#content.register legend {padding-bottom: 12px;margin-bottom: 30px;}
+#content.register legend a {color: #CCC;}
+#content.register legend>span {display: inline-block;width: 92%;text-align: center;color: #FFF;}
+
+.navbar-default {background-color:#3b5998;border-color: transparent;border-radius: 0;margin-bottom: 0px;}
+.navbar-default .navbar-nav>li>a {color: #FFF;}
+
+.jumbotron {    background-color: #3e3e3e;color: #FFF;padding: 30px;border-radius: 0px !important;margin-bottom: 0px;    margin-top: 25px;}
+.jumbotron legend {color: #FFF;}
+.jumbotron .form-group {margin-left: 0px;margin-right: 0px;}
+
+.table-bordered thead {background-color:#3b5998;color: #FFF;}
+.table-bordered tbody {background-color: #FFF;}
+
+
+#form.login .form-control,#content.register #form form .form-control {    background-color: transparent;border: none;border-bottom: 1px solid #ccc;border-radius: 0;color: #FFF;}
+#form.login .form-control::placeholder,#content.register #form form .form-control::placeholder {color: #FFF;}
+#form.login .form-control:focus,#content.register #form form .form-control:focus {box-shadow: none;}
